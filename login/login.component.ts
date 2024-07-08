@@ -12,10 +12,8 @@ export class LoginComponent {
   psw:any=""
 
 
-  login(mail:any,password:any){  //this argyment can anything, not exactly what we pass from template rendering variable
-    this.email =mail.value
-    this.psw=password.value
-    alert(`you email is ${this.email} and password is ${this.psw}`)
+  login(){  //this argyment can anything, not exactly what we pass from template rendering variable
+   alert(this.email + this.psw)
   }
 
   

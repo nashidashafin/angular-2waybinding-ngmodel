@@ -3,10 +3,10 @@
         <p>{{data}}</p>
         <h1>Login Here</h1>
         <div class="form-control border-0 shadow-lg  my-3">
-            <input #email  class="form-control" type="text" placeholder="Enter your Email"><br>
+            <input [(ngModel)]="email" name="mail" class="form-control" type="text" placeholder="Enter your Email"><br>
 
-            <input #password  class="form-control" type="password" [placeholder]="secondData"><br>
-            <button (click)="login(email,password)" class="btn btn-success">Login</button>
+            <input [(ngModel)]="psw" name="pswd" class="form-control" type="password" [placeholder]="secondData"><br>
+            <button (click)="login()" class="btn btn-success">Login</button>
         </div>
     </div>
 </form>
