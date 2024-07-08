@@ -12,22 +12,13 @@ export class LoginComponent {
   psw:any=""
 
 
-  login(){
-    alert("Login Clicked")
+  login(mail:any,password:any){  //this argyment can anything, not exactly what we pass from template rendering variable
+    this.email =mail.value
+    this.psw=password.value
+    alert(`you email is ${this.email} and password is ${this.psw}`)
   }
 
-  accessEmail(event:any){
-
-    this.email=event.target.value
-    console.log(this.email);
-    
-  }
-
-  accessPassword(event:any){
-    this.psw=event.target.value
-    console.log(this.psw);
-    
-  }
+  
 }
 
 
